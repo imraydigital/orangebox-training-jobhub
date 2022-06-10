@@ -1,31 +1,38 @@
-.container {
-  padding: 0 2rem;
-}
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
+  width: 100vw;
+  padding: 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url('/images/orangebox-hello-min.jpg');
+  background-size: cover;
+  background-position: 50% 25%;
 }
 
 .footer {
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  background-color: #27262C;
+  color: #FFF;
+  letter-spacing: .5px;
+  font-weight: 200;
+}
+
+.footer>*{
+  margin: 0px 5px;
 }
 
 .footer a {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
 }
 
 .title a {
@@ -43,69 +50,49 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  font-weight: 500;
+  width: 100%;
+}
+
+.subtitle {
+  line-height: 1.15;
+  color: #FFF;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-top: 20px;
 }
 
 .title,
 .description {
   text-align: center;
+  color: #FFF;
 }
 
 .description {
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  width: 80%;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
 
-.grid {
+.getStartedBtn {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
+  background-color: #000;
   font-size: 1.25rem;
-  line-height: 1.5;
+  color: #FFF;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all ease-in-out 150ms;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.getStartedBtn:hover {
+  background-color: #FFF;
+  color: #000;
 }
 
 @media (max-width: 600px) {
@@ -113,4 +100,9 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.formContainer {
+  width: 100%;
+  height: auto;
 }
