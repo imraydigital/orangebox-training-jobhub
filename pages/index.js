@@ -61,7 +61,6 @@ export default function Home() {
       <div id='formContainer' className={styles.formContainer}>
       <Transition in={showForm} timeout={150} mountOnEnter >
         {state => {
-          console.log(state);
           return (
             <EligibilityForm show={state}/>
           )

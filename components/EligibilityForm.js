@@ -22,7 +22,7 @@ const EligibilityForm = ({ show }) => {
       <h1>Eligibility Questionnaire</h1>
       <form>
         <div className={styles.efc__input__cb}>
-          <label for='checkbox1'>Are you 18+ ?</label>
+          <label htmlFor='checkbox1'>Are you 18+ ?</label>
           <input type='checkbox' id='checkbox1'name='age' placeholder='Placeholder text here' onChange={(e)=>{
             setEligibility(prevState => {
               return {
@@ -33,7 +33,7 @@ const EligibilityForm = ({ show }) => {
           }} required/>
         </div>
         <div className={styles.efc__input__cb} >
-          <label for='checkbox2'>Are you currently unemployed?</label>
+          <label htmlFor='checkbox2'>Are you currently unemployed?</label>
           <input type='checkbox' name='unemployed' id='checkbox2' placeholder='Placeholder text here' onChange={(e)=>{
             setEligibility(prevState => {
               return {
@@ -44,7 +44,7 @@ const EligibilityForm = ({ show }) => {
           }} required/>
         </div>
         <div className={styles.efc__input__cb}>
-          <label for='checkbox3'>Are you in receipt of Universal Credit?</label>
+          <label htmlFor='checkbox3'>Are you in receipt of Universal Credit?</label>
           <input type='checkbox' name='uc' id='checkbox3' placeholder='Placeholder text here' onChange={(e)=>{
             setEligibility(prevState => {
               return {
